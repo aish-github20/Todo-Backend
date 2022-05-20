@@ -16,7 +16,7 @@ cors = CORS()
 
 def create_app(test_config=None):
     app = Flask(__name__)
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://YOUR_URI'
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://nrwnbzviswbirz:03e907e81b9530096e9dfbaa648012a951fea80bd613ddcc38937e1ca69cb2ba@ec2-44-194-117-205.compute-1.amazonaws.com:5432/dbdk4aokcnaiq0'
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
     from static.todoApp.model.todo_list_model import Todo
     db.init_app(app)
